@@ -1,0 +1,16 @@
+{
+	"name": "my-docs",
+	"private": true,
+	"scripts": {
+		"build:css": "postcss src/css/main.css -o theme/static/css/tailwind.min.css",
+		"build:assets": "npm run build:css && cp -r src/images theme/static/",
+		"lint:html": "htmlhint theme/templates/**/*.html",
+		"deploy": "mkdocs build --clean"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"postcss": "^8.4.27",
+		"tailwindcss": "^3.3.2",
+		"htmlhint": "^0.14.2"
+	}
+}

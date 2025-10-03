@@ -1,0 +1,28 @@
+<header class="bg-white shadow">
+	<div class="container mx-auto flex items-center justify-between py-4 px-6">
+		<a href="{{ config.site_url }}" class="flex items-center space-x-2">
+			<img src="{{ 'static/images/logo.svg' | url }}" alt="Логотип" class="h-8"/>
+			<span class="text-xl font-semibold">{{ config.site_name }}</span>
+		</a>
+		<nav class="hidden md:flex space-x-6">
+			<a href="{{ config.site_url }}#getting-started" class="text-gray-600 hover:text-blue-500">Начать</a>
+			<a href="{{ config.site_url }}#api" class="text-gray-600 hover:text-blue-500">API</a>
+			<a href="{{ config.site_url }}#about" class="text-gray-600 hover:text-blue-500">О проекте</a>
+		</nav>
+		<button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+				 viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
+		</button>
+	</div>
+</header>
+
+<nav id="mobile-menu" class="md:hidden hidden bg-white shadow">
+	<div class="px-4 py-2 space-y-1">
+		<a href="{{ config.site_url }}#getting-started" class="block text-gray-600 hover:text-blue-500">Начать</a>
+		<a href="{{ config.site_url }}#api" class="block text-gray-600 hover:text-blue-500">API</a>
+		<a href="{{ config.site_url }}#about" class="block text-gray-600 hover:text-blue-500">О проекте</a>
+	</div>
+</nav>

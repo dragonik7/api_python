@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    @apply py-20 text-center bg-cover bg-center text-white;
+    background-image: url('../images/hero-bg.jpg');
+}

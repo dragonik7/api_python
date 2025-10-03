@@ -1,1 +1,6 @@
 site_name: My Docs
+theme:
+    name: null
+    custom_dir: theme/templates
+nav:
+    - Главная: index.md
